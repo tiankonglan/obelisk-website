@@ -6,5 +6,5 @@
   "features": "Features",
   "comparisons": "Comparisons",
   "benchmarks": "Benchmarks",
-  "migrating-from-webpack": "Migrating from Webpack"
+  "migrating-from-others": "Migrating from Others"
 }

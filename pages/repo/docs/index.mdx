@@ -3,7 +3,7 @@ title: Turborepo Quickstart
 description: Create your first monorepo or add Turborepo to an existing project.
 ---
 
-import { readdirSync, lstatSync, readFileSync } from 'fs';
+import  { readdirSync, lstatSync, readFileSync } from 'fs';
 import path from 'path';
 import { QuickStartArea, LearnMoreArea, MonoreposArea } from "../../../components/QuickStart";
 import { ExamplesArea } from "../../../components/ExamplesArea";
@@ -11,7 +11,7 @@ import FullTurboCTA from "../../../components/FullTurboCTA";
 
 export const getStaticProps = ({ params }) => {
   // path to examples directory at the monorepo root.
-  const examplesDirectory = path.join(__dirname, '../../../../../examples')
+  const examplesDirectory = path.join(__dirname, '../../../../examples')
   const examples = [];
   readdirSync(examplesDirectory).forEach(file => {
     if (lstatSync(path.join(examplesDirectory, file)).isDirectory()) {

@@ -123,8 +123,7 @@ function SiteCards() {
           className="turborepoCardBg"
         >
           <p className="text-lg !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-70">
-            High-performance build system for JavaScript and TypeScript
-            codebases.
+            Co-built platform for connecting users and developers.
           </p>
         </Card>
       </FadeIn>
@@ -140,7 +139,7 @@ function SiteCards() {
             <CardBadge>beta</CardBadge>
           </div>
           <p className="text-lg !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-70 ">
-            Introducing the Rust-powered successor to Webpack.
+             The engine for building a full-chain digital world.
           </p>
         </Card>
       </FadeIn>
@@ -180,11 +179,10 @@ function LandingPage() {
         <Background />
         <FadeIn className="z-10 flex flex-col items-center justify-center w-full h-full">
           <h1 className="mt-12 lg:!mt-20 mx-6 w-[300px] md:!w-full font-extrabold text-5xl lg:text-6xl  leading-tight xl:leading-snug text-center mb-4 bg-clip-text text-transparent bg-gradient-to-b from-black/80 to-black dark:from-white dark:to-[#AAAAAA]">
-            Make Ship Happen
+            For Mass Adoption
           </h1>
           <p className="mx-6 text-xl max-h-[112px] md:max-h-[96px] w-[315px] md:w-[660px] md:text-2xl font-space-grotesk text-center text-[#666666] dark:text-[#888888]">
-            Turbo is an incremental bundler and build system optimized for
-            JavaScript and TypeScript, written in Rust.
+            Obelisk Labs is an Future-proof, mass-adoption, move-language based, chain-wide world lab.
           </p>
         </FadeIn>
         <SiteCards />
