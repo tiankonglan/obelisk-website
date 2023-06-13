@@ -12,47 +12,36 @@ export function RepoLetter() {
     <section className="relative flex flex-col items-center px-6 py-16 font-sans md:py-24 lg:py-32 gap-14">
       <FadeIn>
         <HeroText className="lg:text-[65px]">
-          Scaling your Codebase
+          Decoding
           <br />
-          shouldn&apos;t be so difficult
+          The new full-chain digital world
         </HeroText>
       </FadeIn>
       <div className="flex flex-col max-w-xl leading-6 md:text-lg lg:text-lg">
         <FadeIn className="opacity-70">
           <p>
-            The bigger your project grows, the slower it gets. Tasks like
-            linting, testing, and building begin to take enormous amounts of
-            time.
+            Starting out, any project from 0-1 is a tough phase, but it's okay to choose obelisk and we'll support you!
           </p>
           <br />
           <p>
-            If you&apos;re serving multiple applications, you might reach for a
-            monorepo. They&apos;re incredible for productivity, especially on
-            the frontend, but the tooling can be a nightmare. There&apos;s a lot
-            of stuff to do (and things to mess up). Nothing &ldquo;just
-            works.&rdquo; It&apos;s become completely normal to waste entire
-            days or weeks on plumbing—tweaking configs, writing one-off scripts,
-            and stitching stuff together.
+            If you need support from early community members, and financial help you can contact us we will stay online waiting for your letters, we strongly believe that the next phase of web3 will be a different kind of on-chain world if you have the same idea.
+            If you have the same idea, please contact us as soon as possible and let's build a digital world on the chain together.
           </p>
           <br />
           <p>We need something else.</p>
           <br></br>
           <p>
-            A fresh take on the whole setup. Designed to glue everything
-            together. A toolchain that works for you and not against you. With
-            sensible defaults, but even better escape hatches. Built with the
-            same techniques used by the big guys, but in a way that doesn&apos;t
-            require PhD to learn or a staff to maintain.
+            Of course, if you are a digital lurker, you are welcome to join our community and build a digital world together with the digital world builders.
           </p>
           <br />
-          <p>With Turborepo, we&apos;re doing just that.</p>
+          {/*<p>With Turborepo, we&apos;re doing just that.</p>*/}
           <br />
-          <p>
-            We&apos;re building a build system that can keep up with your team.
-            You&apos;ll see your CI get faster, duplicated work get cut, and
-            your NPM scripts get simpler. You&apos;ll get a world-class
-            development environment, without the maintenance burden.
-          </p>
+          {/*<p>*/}
+          {/*  We&apos;re building a build system that can keep up with your team.*/}
+          {/*  You&apos;ll see your CI get faster, duplicated work get cut, and*/}
+          {/*  your NPM scripts get simpler. You&apos;ll get a world-class*/}
+          {/*  development environment, without the maintenance burden.*/}
+          {/*</p>*/}
         </FadeIn>
         <FadeIn noVertical viewTriggerOffset className="relative h-2 md:h-12">
           <span
@@ -70,7 +59,7 @@ export function RepoLetter() {
           <div className="w-24 h-24 min-w-[96px] min-h-[96px] rounded-full border dark:border-white/10 border-black/10 flex items-center justify-center ">
             <Image
               alt="Image of Jared Palmer"
-              src="/images/people/jaredpalmer.jpeg"
+              src="/images/people/giao.png"
               width={64}
               height={64}
               className="rounded-full grayscale"
@@ -86,7 +75,7 @@ export function RepoLetter() {
             />
             <Image
               alt="Jared Palmer's hand written signature"
-              src="/images/people/giao.png"
+              src="/images/docs/repo/jared-signature-dark.svg"
               width={209}
               height={116}
               className="hidden -mt-2 dark:block"
