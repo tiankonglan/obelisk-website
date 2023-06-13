@@ -72,10 +72,9 @@ export function RepoHero() {
           className="z-50 flex flex-col items-center justify-center gap-5 px-6 text-center lg:gap-6"
         >
           <div className="text-4xl font-black" >Platform</div>
-          <HeroText h1>The build system that makes ship happen</HeroText>
+          <HeroText h1>An integrated platform linking users and developers</HeroText>
           <SectionSubtext hero>
-            Turborepo is a high-performance build system for JavaScript and
-            TypeScript codebases.
+            Co-definition, co-creation, co-distribution.
           </SectionSubtext>
         </FadeIn>
         <FadeIn
