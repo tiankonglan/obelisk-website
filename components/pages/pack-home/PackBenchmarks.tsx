@@ -30,24 +30,24 @@ export interface BenchmarkBar {
 export const DEFAULT_BARS: BenchmarkBar[] = [
   {
     key: "next13",
-    label: "Next.js 13",
+    label: "Obelisk",
     version: "13.4",
     turbo: true,
   },
   {
     key: "next12",
-    label: "Next.js 12",
+    label: "MUD",
     version: "12.3.4",
   },
   {
     key: "vite",
-    label: "Vite",
+    label: "Dojo",
     version: "4.3.1",
     swc: true,
   },
   {
     key: "next11",
-    label: "Next.js 11",
+    label: "ARC",
     version: "11.1.4",
   },
 ];
