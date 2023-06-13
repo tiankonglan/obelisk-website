@@ -163,13 +163,7 @@ function Teams() {
       <div className="z-50 grid grid-flow-col grid-rows-6 sm:grid-rows-3 md:grid-rows-2 lg:grid-rows-1">
         <Clients
           companyList={[
-            "Vercel",
-            "AWS",
-            "Microsoft",
-            "Adobe",
-            "Disney",
-            "Netflix",
-            // "Sui",
+            "SUI",
           ]}
           staticWidth
         />

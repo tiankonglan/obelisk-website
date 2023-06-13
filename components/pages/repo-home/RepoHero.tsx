@@ -71,11 +71,7 @@ export function RepoHero() {
           delay={0.15}
           className="z-50 flex flex-col items-center justify-center gap-5 px-6 text-center lg:gap-6"
         >
-          <RepoLogo
-            alt="Turborepo"
-            width="200"
-            className="w-[160px] md:w-[200px] fill-black dark:fill-white"
-          />
+          <div className="text-4xl font-black" >Platform</div>
           <HeroText h1>The build system that makes ship happen</HeroText>
           <SectionSubtext hero>
             Turborepo is a high-performance build system for JavaScript and

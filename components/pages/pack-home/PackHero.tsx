@@ -72,11 +72,7 @@ export function PackHero() {
           delay={0.15}
           className="z-50 flex flex-col items-center justify-center gap-5 px-6 text-center lg:gap-6"
         >
-          <PackLogo
-            alt="Turbopack"
-            width="200"
-            className="w-[160px] md:w-[200px] fill-black dark:fill-white"
-          />
+          <div className="text-4xl font-black" >Engine</div>
           <HeroText h1>Building Full-chain Digital World</HeroText>
           <SectionSubtext hero>
             Obelisk is an engine for building a full-chain digital world.

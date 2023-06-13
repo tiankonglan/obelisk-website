@@ -559,4 +559,10 @@ export const users: Array<TurboUser> = [
     infoLink: "https://sliitfoss.org",
     pinned: true,
   },
+  {
+    caption: "SUI",
+    image: "/images/logos/sui.svg",
+    infoLink: "https://sui.io/",
+    pinned: true,
+  },
 ];
