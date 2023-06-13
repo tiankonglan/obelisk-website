@@ -18,12 +18,12 @@ const config: DocsThemeConfig = {
     const router = useRouter();
     const { frontMatter } = useConfig();
 
-    let section = "Turbo";
+    let section = "Obelisk | Let's build technologies for mass adoption together";
     if (router?.pathname.startsWith("/pack")) {
-      section = "Turbopack";
+      section = "docs";
     }
     if (router?.pathname.startsWith("/repo")) {
-      section = "Turborepo";
+      section = "docs";
     }
 
     const defaultTitle = frontMatter.overrideTitle || section;

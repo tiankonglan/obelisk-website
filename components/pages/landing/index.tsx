@@ -93,9 +93,9 @@ function Card({
         </div>
 
         <div className="flex flex-col items-center flex-1">
-          {title == "pack" ? (
+          {title == "repo" ? (
               <div className="font-semibold">
-                  Engine
+                  Platform
               </div>
             // <PackLogo
             //   alt={alt}
@@ -103,7 +103,7 @@ function Card({
             // />
           ) : (
               <div className="font-semibold">
-              Platform
+                  Engine
               </div>
             // <RepoLogo
             //   alt={alt}

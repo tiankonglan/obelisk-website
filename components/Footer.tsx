@@ -157,23 +157,21 @@ export function FooterContent() {
           </div>
         </div>
 
-        {/*<div className="pt-8 mt-8 sm:flex sm:items-center sm:justify-between">*/}
-        {/*  <div>*/}
-        {/*    <a*/}
-        {/*      className="text-current"*/}
-        {/*      target="_blank"*/}
-        {/*      rel="noopener noreferrer"*/}
-        {/*      title="vercel.com homepage"*/}
-        {/*      href="https://vercel.com?utm_source=turbo.build&utm_medium=referral&utm_campaign=footer-logoLink"*/}
-        {/*    >*/}
-        {/*      <VercelLogo />*/}
-        {/*    </a>*/}
-        {/*    <p className="mt-4 text-xs text-gray-500 dark:text-[#888888]">*/}
-        {/*      &copy; {new Date().getFullYear()} Vercel, Inc. All rights*/}
-        {/*      reserved.*/}
-        {/*    </p>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
+        <div className="pt-8 mt-8 sm:flex sm:items-center sm:justify-between">
+          <div>
+            <a
+              className="text-current"
+              rel="noopener noreferrer"
+              href="/"
+            >
+              <VercelLogo />
+            </a>
+            <p className="mt-4 text-xs text-gray-500 dark:text-[#888888]">
+              &copy; {new Date().getFullYear()} Obelisk labs, Inc. All rights
+              reserved.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
