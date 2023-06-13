@@ -119,6 +119,7 @@ export function OGImage({
         color: "#fff",
       }}
     >
+
       {/* eslint-disable-next-line  @next/next/no-img-element, jsx-a11y/alt-text */}
       <div style={{ display: "flex", height: 97 * 1.1, alignItems: "center" }}>
         {type === "pack" ? (

@@ -94,15 +94,21 @@ function Card({
 
         <div className="flex flex-col items-center flex-1">
           {title == "pack" ? (
-            <PackLogo
-              alt={alt}
-              className="w-[160px] md:w-[220px] mb-3 fill-black dark:fill-white"
-            />
+              <div className="font-semibold">
+                  Engine
+              </div>
+            // <PackLogo
+            //   alt={alt}
+            //   className="w-[160px] md:w-[220px] mb-3 fill-black dark:fill-white"
+            // />
           ) : (
-            <RepoLogo
-              alt={alt}
-              className="w-[160px] md:w-[220px] mb-3 fill-black dark:fill-white"
-            />
+              <div className="font-semibold">
+              Platform
+              </div>
+            // <RepoLogo
+            //   alt={alt}
+            //   className="w-[160px] md:w-[220px] mb-3 fill-black dark:fill-white"
+            // />
           )}
           {children}
         </div>
