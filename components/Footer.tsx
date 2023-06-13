@@ -29,48 +29,48 @@ function FooterHeader({ children }: { children: ReactNode }) {
 
 const navigation = {
   general: [
-    { name: "Blog", href: "/blog" },
-    { name: "Releases", href: "https://github.com/vercel/turbo/releases" },
+    // { name: "Blog", href: "/blog" },
+    // { name: "Releases", href: "https://github.com/vercel/turbo/releases" },
   ],
   repo: [
-    { name: "Documentation", href: "/repo/docs" },
-    {
-      name: "API Reference",
-      href: "/repo/docs/reference/command-line-reference",
-    },
-    { name: "FAQ", href: "/repo/docs/faq" },
+    // { name: "Documentation", href: "/repo/docs" },
+    // {
+    //   name: "API Reference",
+    //   href: "/repo/docs/reference/command-line-reference",
+    // },
+    // { name: "FAQ", href: "/repo/docs/faq" },
   ],
   pack: [
-    { name: "Documentation", href: "/pack/docs" },
-    { name: "Features", href: "/pack/docs/features" },
+    // { name: "Documentation", href: "/pack/docs" },
+    // { name: "Features", href: "/pack/docs/features" },
   ],
   support: [
     {
       name: "GitHub",
-      href: "https://github.com/vercel/turbo",
+      href: "https://github.com/0xobelisk/obelisk-engine",
     },
     {
       name: "Discord",
-      href: "https://turbo.build/discord",
+      href: "https://discord.com/invite/ceETxS2eTa",
     },
   ],
   company: (site: TurboSite) => [
-    { name: "Vercel", href: "https://vercel.com" },
-    {
-      name: "Open Source Software",
-      href: "https://vercel.com/oss?utm_source=turbo.build&utm_medium=referral&utm_campaign=footer-ossLink",
-    },
-    {
-      name: "Contact Sales",
-      href: `https://vercel.com/${
-        site === "repo" ? "solutions/turborepo" : "contact/sales"
-      }?utm_source=turbo.build&utm_medium=referral&utm_campaign=footer-enterpriseLink`,
-    },
-    { name: "Twitter", href: "https://twitter.com/vercel" },
+    // { name: "Vercel", href: "https://vercel.com" },
+    // {
+    //   name: "Open Source Software",
+    //   href: "https://vercel.com/oss?utm_source=turbo.build&utm_medium=referral&utm_campaign=footer-ossLink",
+    // },
+    // {
+    //   name: "Contact Sales",
+    //   href: `https://vercel.com/${
+    //     site === "repo" ? "solutions/turborepo" : "contact/sales"
+    //   }?utm_source=turbo.build&utm_medium=referral&utm_campaign=footer-enterpriseLink`,
+    // },
+    // { name: "Twitter", href: "https://twitter.com/vercel" },
   ],
   legal: [
-    { name: "Privacy Policy", href: "/privacy" },
-    { name: "Terms of Service", href: "/terms" },
+    // { name: "Privacy Policy", href: "/privacy" },
+    // { name: "Terms of Service", href: "/terms" },
   ],
 };
 
@@ -96,7 +96,7 @@ export function FooterContent() {
                 </ul>
               </div>
               <div className="mt-12 md:!mt-0">
-                <FooterHeader>Turborepo</FooterHeader>
+                <FooterHeader>Platform</FooterHeader>
                 <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
                   {navigation.repo.map((item) => (
                     <li key={item.name}>
@@ -106,7 +106,7 @@ export function FooterContent() {
                 </ul>
               </div>
               <div className="mt-12 md:!mt-0">
-                <FooterHeader>Turbopack</FooterHeader>
+                <FooterHeader>Engine</FooterHeader>
                 <ul role="list" className="mt-4 space-y-1.5 list-none ml-0">
                   {navigation.pack.map((item) => (
                     <li key={item.name}>

@@ -96,7 +96,7 @@ export function RepoHero() {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://github.com/vercel/turbo"
+                href="https://github.com/0xobelisk/obelisk-engine"
                 className="block py-3"
               >
                 GitHub

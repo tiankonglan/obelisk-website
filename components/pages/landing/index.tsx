@@ -163,6 +163,7 @@ function Teams() {
             "Adobe",
             "Disney",
             "Netflix",
+            // "Sui",
           ]}
           staticWidth
         />
