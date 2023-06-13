@@ -330,7 +330,7 @@ function GraphLabel({
       )}
       {swc && (
         <p className="font-space-grotesk m-0 font-light text-[#666666]">
-          with SWC
+          with Cairo
         </p>
       )}
       {esbuild && (

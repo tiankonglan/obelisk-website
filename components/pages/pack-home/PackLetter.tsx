@@ -20,28 +20,15 @@ export function PackLetter() {
       <div className="flex flex-col max-w-xl leading-6 md:text-lg lg:text-lg">
         <FadeIn className="opacity-70">
           <p>
-            It&apos;s time for a new beginning in compiler infrastructure for
-            the entire web ecosystem. Webpack has been downloaded over 3 billion
-            times. It&apos;s become an integral part of building for the web.
-            But just like Babel and Terser, it&apos;s time to go all-in on
-            native. I joined Vercel and assembled a team of world class
-            engineers to build the web&apos;s next generation bundler.
+            It's time to make a new start for the Web3 ecosystem, which has become an essential protocol component of the web with over a trillion dollars in uniswap transactions.
           </p>
           <br />
           <p>
-            This team has taken lessons from 10 years of Webpack, combined with
-            the innovations in incremental computation from Turborepo and
-            Google&apos;s Bazel, and invented an architecture ready to withstand
-            the next 10 years.
+            The early members of the team generally have more than years of experience in the industry, from chain development to different eco-contract development, standards contribution and core front and back-end engineers and designers..
           </p>
           <br />
           <p>
-            With that, we&apos;re excited to introduce Turbopack, our
-            Rust-powered successor to Webpack. It will harness the power of our
-            build system, Turborepo, for massive performance improvements.
-            Turbopack is the new foundation of high-performance bare-metal
-            tooling and is now open source—we&apos;re excited to share it with
-            you.
+            We are excited to introduce obelisk Engine, developed by Obelisk labs and now open sourceーーwe are happy to share it with you..
           </p>
         </FadeIn>
         <FadeIn
@@ -64,7 +51,7 @@ export function PackLetter() {
           <div className="w-24 h-24 min-w-[96px] min-h-[96px] rounded-full border dark:border-white/10 border-black/10 flex items-center justify-center ">
             <Image
               alt="Image of Tobias Koopers"
-              src="/images/people/tobiaskoppers.jpg"
+              src="/images/people/yaoshui.jpeg"
               width={64}
               height={64}
               className="rounded-full"
@@ -88,8 +75,8 @@ export function PackLetter() {
               className="hidden -mb-3 -ml-3 dark:block"
             />
             <div className="flex gap-2 flex-wrap text-sm leading-none text-[#888888] max-w-[156px] md:max-w-xl lg:max-w-xl">
-              <p className="font-bold">Tobias Koppers</p>
-              <p>Creator of Webpack</p>
+              <p className="font-bold">Yao Shui Ge</p>
+              <p>Creator of Obelisk</p>
             </div>
           </div>
         </FadeIn>

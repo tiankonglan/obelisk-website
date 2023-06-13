@@ -5,7 +5,7 @@ export function PackFeatures() {
   return (
     <FeaturesBento
       header="Why Obelisk Engine?"
-      body="With incremental behavior and adaptable bundling strategies, Turbopack provides a fast and flexible development experience for apps of any size."
+      body="Built through modularity,Obelisk provides a fast and flexible development experience for apps of any size.."
       features={PACK_HOME_FEATURES}
     />
   );
