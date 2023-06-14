@@ -86,7 +86,7 @@ export function RepoHero() {
               <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://obelisk-platform.vercel.app"
+                  href="hhttps://0xobelisk.org"
                   className="block py-3"
               >
                 EDU
@@ -96,7 +96,7 @@ export function RepoHero() {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://navigation-six-lake.vercel.app"
+                href="https://0xobelisk.com"
                 className="block py-3"
               >
                 BUILD
