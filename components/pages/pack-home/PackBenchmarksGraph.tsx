@@ -234,27 +234,27 @@ const GraphTimer = ({
     <div className={`flex flex-row gap-2 w-24 justify-end items-center z-10`}>
       {turbo && (
         <div className="relative flex w-6 h-6">
-          <Image
-            alt="Turbopack"
-            src="/images/docs/pack/turbo-benchmark-icon-light.svg"
-            width={32}
-            height={32}
-            className="block dark:hidden"
-          />
-          <Image
-            alt="Turbopack"
-            src="/images/docs/pack/turbo-benchmark-icon-dark.svg"
-            width={32}
-            height={32}
-            className="hidden dark:block"
-          />
-          <Gradient
-            pink
-            width="100%"
-            height="100%"
-            small
-            className="opacity-0 dark:opacity-60"
-          />
+          {/*<Image*/}
+          {/*  alt="Turbopack"*/}
+          {/*  src="/images/docs/pack/turbo-benchmark-icon-light.svg"*/}
+          {/*  width={32}*/}
+          {/*  height={32}*/}
+          {/*  className="block dark:hidden"*/}
+          {/*/>*/}
+          {/*<Image*/}
+          {/*  alt="Turbopack"*/}
+          {/*  src="/images/docs/pack/turbo-benchmark-icon-dark.svg"*/}
+          {/*  width={32}*/}
+          {/*  height={32}*/}
+          {/*  className="hidden dark:block"*/}
+          {/*/>*/}
+          {/*<Gradient*/}
+          {/*  pink*/}
+          {/*  width="100%"*/}
+          {/*  height="100%"*/}
+          {/*  small*/}
+          {/*  className="opacity-0 dark:opacity-60"*/}
+          {/*/>*/}
         </div>
       )}
       <p className="font-mono">
