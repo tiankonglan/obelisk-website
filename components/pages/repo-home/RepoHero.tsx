@@ -86,20 +86,20 @@ export function RepoHero() {
               <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/0xobelisk/obelisk-engine"
+                  href="https://obelisk-platform.vercel.app"
                   className="block py-3"
               >
-                One
+                EDU
               </a>
             </CTAButton>
             <CTAButton outline>
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://github.com/0xobelisk/obelisk-engine"
+                href="https://navigation-six-lake.vercel.app"
                 className="block py-3"
               >
-                Two
+                BUILD
               </a>
             </CTAButton>
           </div>
