@@ -93,33 +93,33 @@ const config: DocsThemeConfig = {
 
     return (
       <>
-        {/*<meta name="viewport" content="width=device-width, initial-scale=1.0" />*/}
-        {/*<link*/}
-        {/*  rel="apple-touch-icon"*/}
-        {/*  sizes="180x180"*/}
-        {/*  href={`/images/favicon-${systemTheme}/apple-touch-icon.png`}*/}
-        {/*/>*/}
-        {/*<link*/}
-        {/*  rel="icon"*/}
-        {/*  type="image/png"*/}
-        {/*  sizes="32x32"*/}
-        {/*  href={`/images/favicon-${systemTheme}/favicon-32x32.png`}*/}
-        {/*/>*/}
-        {/*<link*/}
-        {/*  rel="icon"*/}
-        {/*  type="image/png"*/}
-        {/*  sizes="16x16"*/}
-        {/*  href={`/images/favicon-${systemTheme}/favicon-16x16.png`}*/}
-        {/*/>*/}
-        {/*<link*/}
-        {/*  rel="mask-icon"*/}
-        {/*  href={`/images/favicon-${systemTheme}/safari-pinned-tab.svg`}*/}
-        {/*  color="#000000"*/}
-        {/*/>*/}
-        {/*<link*/}
-        {/*  rel="shortcut icon"*/}
-        {/*  href={`/images/favicon-${systemTheme}/favicon.ico`}*/}
-        {/*/>*/}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href={`/images/favicon-${systemTheme}/apple-touch-icon.png`}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href={`/images/favicon-${systemTheme}/favicon-32x32.png`}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href={`/images/favicon-${systemTheme}/favicon-16x16.png`}
+        />
+        <link
+          rel="mask-icon"
+          href={`/images/favicon-${systemTheme}/safari-pinned-tab.svg`}
+          color="#000000"
+        />
+        <link
+          rel="shortcut icon"
+          href={`/images/favicon-${systemTheme}/favicon.ico`}
+        />
         {/*<meta name="msapplication-TileColor" content="#000000" />*/}
         {/*<meta name="theme-color" content="#000" />*/}
         {/*<meta name="twitter:card" content="summary_large_image" />*/}
