@@ -72,24 +72,24 @@ const config: DocsThemeConfig = {
 
     const asPath = router.asPath;
 
-    let ogUrl = '/images/docs/pack/instruments-dark.png';
+    let ogUrl;
 
-    // if (asPath === "/") {
-    //   ogUrl = `${SITE_ROOT}/api/og`;
-    // } else if (frontMatter?.ogImage) {
-    //   ogUrl = `${SITE_ROOT}${frontMatter.ogImage}`;
-    // } else {
-    //   const type = asPath.startsWith("/repo")
-    //     ? "repo"
-    //     : asPath.startsWith("/pack")
-    //     ? "pack"
-    //     : "";
-    //   const title = frontMatter.title
-    //     ? `&title=${encodeURIComponent(frontMatter.title)}`
-    //     : "";
-    //
-    //   ogUrl = `${SITE_ROOT}/api/og?type=${type}${title}`;
-    // }
+    if (asPath === "/") {
+      ogUrl = `${SITE_ROOT}/api/og`;
+    } else if (frontMatter?.ogImage) {
+      ogUrl = `${SITE_ROOT}${frontMatter.ogImage}`;
+    } else {
+      const type = asPath.startsWith("/repo")
+        ? "repo"
+        : asPath.startsWith("/pack")
+        ? "pack"
+        : "";
+      const title = frontMatter.title
+        ? `&title=${encodeURIComponent(frontMatter.title)}`
+        : "";
+
+      ogUrl = `${SITE_ROOT}/api/og?type=${type}${title}`;
+    }
 
     return (
       <>
@@ -120,28 +120,28 @@ const config: DocsThemeConfig = {
           rel="shortcut icon"
           href={`/images/favicon-${systemTheme}/favicon.ico`}
         />
-        <meta name="msapplication-TileColor" content="#000000" />
-        <meta name="theme-color" content="#000" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@turborepo" />
-        <meta name="twitter:creator" content="@turborepo" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={fullUrl} />
-        <link rel="canonical" href={fullUrl} />
-        <meta property="twitter:image" content={ogUrl} />
-        <meta property="og:image" content={ogUrl} />
-        <meta property="og:locale" content="en_IE" />
-        <meta property="og:site_name" content="Obelist" />
-        <link rel="prefetch" href="/repo" as="document" />
-        <link rel="prefetch" href="/repo/docs" as="document" />
-        <link rel="prefetch" href="/pack" as="document" />
-        <link rel="prefetch" href="/pack/docs" as="document" />
-        <link
-          rel="alternate"
-          type="application/rss+xml"
-          title="Obelist Blog"
-          href="https://turbo.build/feed.xml"
-        />
+        {/*<meta name="msapplication-TileColor" content="#000000" />*/}
+        {/*<meta name="theme-color" content="#000" />*/}
+        {/*<meta name="twitter:card" content="summary_large_image" />*/}
+        {/*<meta name="twitter:site" content="@turborepo" />*/}
+        {/*<meta name="twitter:creator" content="@turborepo" />*/}
+        {/*<meta property="og:type" content="website" />*/}
+        {/*<meta property="og:url" content={fullUrl} />*/}
+        {/*<link rel="canonical" href={fullUrl} />*/}
+        {/*<meta property="twitter:image" content={ogUrl} />*/}
+        {/*<meta property="og:image" content={ogUrl} />*/}
+        {/*<meta property="og:locale" content="en_IE" />*/}
+        {/*<meta property="og:site_name" content="Obelist" />*/}
+        {/*<link rel="prefetch" href="/repo" as="document" />*/}
+        {/*<link rel="prefetch" href="/repo/docs" as="document" />*/}
+        {/*<link rel="prefetch" href="/pack" as="document" />*/}
+        {/*<link rel="prefetch" href="/pack/docs" as="document" />*/}
+        {/*<link*/}
+        {/*  rel="alternate"*/}
+        {/*  type="application/rss+xml"*/}
+        {/*  title="Obelisk Blog"*/}
+        {/*  href="https://turbo.build/feed.xml"*/}
+        {/*/>*/}
       </>
     );
   },
