@@ -58,23 +58,23 @@ export function RepoLetter() {
         >
           <div className="w-24 h-24 min-w-[96px] min-h-[96px] rounded-full border dark:border-white/10 border-black/10 flex items-center justify-center ">
             <Image
-              alt="Image of Jared Palmer"
+              alt="User"
               src="/images/people/giao.png"
               width={64}
               height={64}
-              className="rounded-full grayscale"
+              className="rounded-full "
             />
           </div>
           <div className="flex flex-col">
             <Image
-              alt="Jared Palmer's hand written signature"
+              alt="User"
               src="/images/docs/repo/jared-signature-light.svg"
               width={190}
               height={90}
               className="block mt-3 mb-4 ml-3 dark:hidden"
             />
             <Image
-              alt="Jared Palmer's hand written signature"
+              alt="User"
               src="/images/docs/repo/jared-signature-dark.svg"
               width={209}
               height={116}
