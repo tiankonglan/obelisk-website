@@ -82,10 +82,15 @@ export function RepoHero() {
           className="z-50 flex flex-col items-center w-full max-w-md gap-5 px-6"
         >
           <div className="flex flex-col w-full gap-3 md:!flex-row">
-            <CTAButton>
-              <Link href="/repo/docs" className="block py-3">
-                Get Started
-              </Link>
+            <CTAButton outline>
+              <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/0xobelisk/obelisk-engine"
+                  className="block py-3"
+              >
+                One
+              </a>
             </CTAButton>
             <CTAButton outline>
               <a
@@ -94,10 +99,15 @@ export function RepoHero() {
                 href="https://github.com/0xobelisk/obelisk-engine"
                 className="block py-3"
               >
-                GitHub
+                Two
               </a>
             </CTAButton>
           </div>
+          <CTAButton>
+            <Link href="/repo/docs" className="block py-3">
+              Get Started
+            </Link>
+          </CTAButton>
           <p className="text-sm text-[#666666]">License: MPL-2.0</p>
         </FadeIn>
         <FadeIn delay={0.5} className="relative w-full">
