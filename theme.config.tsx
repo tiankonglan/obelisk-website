@@ -128,10 +128,12 @@ const config: DocsThemeConfig = {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={fullUrl} />
         <link rel="canonical" href={fullUrl} />
-        <meta property="twitter:image" content={ogUrl} />
-        <meta property="og:image" content={ogUrl} />
+          <meta property="twitter:image"  />
+          <meta property="og:image"  />
+        {/*<meta property="twitter:image" content={ogUrl} />*/}
+        {/*<meta property="og:image" content={ogUrl} />*/}
         <meta property="og:locale" content="en_IE" />
-        <meta property="og:site_name" content="Turbo" />
+        <meta property="og:site_name" content="Obelist" />
         <link rel="prefetch" href="/repo" as="document" />
         <link rel="prefetch" href="/repo/docs" as="document" />
         <link rel="prefetch" href="/pack" as="document" />

@@ -20,7 +20,7 @@ export function PackHero() {
         <FadeIn className="z-50 flex items-center justify-center w-full">
           <div className="absolute min-w-[614px] min-h-[614px]">
             <Image
-              alt="Turbopack"
+              alt="pack"
               src="/images/docs/pack/turbopack-hero-hexagons-dark.svg"
               width={614}
               height={614}

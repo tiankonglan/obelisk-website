@@ -26,7 +26,7 @@ export function RepoHero() {
               className="hidden dark:block"
             />
             <Image
-              alt="Turborepo"
+              alt="repo"
               src="/images/docs/repo/repo-hero-circles-light.svg"
               width={614}
               height={614}
