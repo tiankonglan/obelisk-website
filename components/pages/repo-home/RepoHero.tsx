@@ -84,9 +84,9 @@ export function RepoHero() {
           <div className="flex flex-col w-full gap-3 md:!flex-row">
             <CTAButton outline>
               <a
-                  target="_blank"
-                  rel="noreferrer"
+                  // target="_blank"
                   // href="https://0xobelisk.org"
+                  rel="noreferrer"
                   href=""
                   className="block py-3"
               >
@@ -95,10 +95,10 @@ export function RepoHero() {
             </CTAButton>
             <CTAButton outline>
               <a
-                target="_blank"
+                  // href="https://0xobelisk.com"
+                // target="_blank"
                 rel="noreferrer"
-                // href="https://0xobelisk.com"
-                  href=""
+                href=""
                 className="block py-3"
               >
                 BUILD
