@@ -164,6 +164,7 @@ function Teams() {
         <Clients
           companyList={[
             "SUI",
+              "APT"
           ]}
           staticWidth
         />
