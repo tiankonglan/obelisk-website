@@ -86,7 +86,8 @@ export function RepoHero() {
               <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://0xobelisk.org"
+                  // href="https://0xobelisk.org"
+                  href=""
                   className="block py-3"
               >
                 EDU
@@ -96,7 +97,8 @@ export function RepoHero() {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://0xobelisk.com"
+                // href="https://0xobelisk.com"
+                  href=""
                 className="block py-3"
               >
                 BUILD
