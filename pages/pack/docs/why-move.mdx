@@ -3,22 +3,27 @@ title: Why Move?
 description: Learn why we use Move && Sui.
 ---
 
-# Why Move?
+# Why Sui?
 
-1. Asset Security :: Reduce dynamic calls to avoid security problems caused by heavy ([source(opens in a new tab)](https://docs.sui.io/learn/architecture/consensus))
+1. Simplicity: The Move contract language has an easy-to-understand syntax that is easy to learn and use. It has a syntax and type system based on the Rust language, which makes it suitable for use by Rust programmers.
 
+2. Easy Extensibility and Community Support:One of the design goals of the Move contract language is to provide extensibility. It supports modular programming, allowing developers to break code into smaller modules, thus improving maintainability and reusability of code.
 
-2. Resource Type Design :: Reduce the mental burden of business design  ([source(opens in a new tab)](https://docs.sui.io/sui-jsonrpc#unsafe_batchTransaction)The underlying interface supports the creation of unsigned batch transactions
+3. Security: One of the design goals of the Move contract language is to provide a highly secure environment for writing and executing smart contracts. It protects against some common vulnerabilities and attacks by using several security features, such as resource ownership and strong type checking.
 
+## Why Move ?
 
-3. Engineering Modularity :: Improve business development efficiency and maintainability ([source(opens in a new tab)](https://docs.sui.io/learn/architecture/consensus))
+1. Special Consensus: No transaction causal sorting for transactions that change ownership of execution resources, thus significantly improving transaction parallelism and large-scale processing.
 
-## Why Sui ?
+2. High-level upper-level business friendliness:  The bottom layer implements some features that shift the complexity to the bottom layer to make the upper layer more business friendly
 
-1. Delayed optimization on design trade-offs :: Transactions that do not involve manipulating shared objects do not go through sorting, reducing the time and effort required to process transactions and improving latency ([source(opens in a new tab)](https://docs.sui.io/learn/architecture/consensus))
+    1-Support batch transactions
 
+    2-Support different types of transaction sponsorship
 
-2. Batch processing :: The underlying interface supports the creation of unsigned batch transaction  ([source(opens in a new tab)](https://docs.sui.io/sui-jsonrpc#unsafe_batchTransaction)The underlying interface supports the creation of unsigned batch transactions
+    3 - Object-based global storage is more convenient for data indexing
 
+    etc.
 
-3. Transaction Sponsorship :: Lower the barrier to entry for users to use the network ([source(opens in a new tab)](https://docs.sui.io/learn/architecture/consensus))
+3. Special storage design: Separate execution costs from storage
+Storage requires a deposit, and destruction of storage is returnable
