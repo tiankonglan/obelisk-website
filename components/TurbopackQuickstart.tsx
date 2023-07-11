@@ -10,15 +10,15 @@ export const TurbopackQuickstartArea = () => {
       <DetailedFeatureLink
         feature={{
           Icon: QuestionMarkCircleIcon,
-          description: `Learn why we created Turbopack, and why we think it’s the future of bundling for the web.`,
+          description: `Learn why we use move and base on sui, and why we think it’s the future of bundling for the web3.`,
           name: "Why Move?",
         }}
-        href="/pack/docs/why-turbopack"
+        href="/pack/docs/why-move"
       ></DetailedFeatureLink>
       <DetailedFeatureLink
         feature={{
           Icon: LightBulbIcon,
-          description: `Learn about the innovative architecture that powers Turbopack’s speed improvements.`,
+          description: `Learn about the innovative architecture that powers dapp’s speed improvements.`,
           name: "Core Concepts",
         }}
         href="/pack/docs/core-concepts"
