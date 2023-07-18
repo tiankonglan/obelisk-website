@@ -325,7 +325,7 @@ function GraphLabel({
             gradients.benchmarkTurboLabel
           )}
         >
-          turbo
+          With Move
         </p>
       )}
       {swc && (

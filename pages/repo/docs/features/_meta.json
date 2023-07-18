@@ -1,5 +1,6 @@
 {
   "entity": "Entity",
-  "protocol": "Protocol",
-  "system": "System"
+  "component": "Component",
+  "system": "System",
+  "world": "World"
 }
