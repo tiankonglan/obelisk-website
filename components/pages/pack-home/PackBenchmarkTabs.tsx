@@ -12,25 +12,25 @@ const TABS: {
 }[] = [
   {
     id: "cold",
-    title: "Cold Start",
+    title: "Code Start",
     soon: false,
     tooltip: "First run",
   },
   {
     id: "file_change",
-    title: "File Change",
+    title: "File Update",
     soon: false,
     tooltip: "Hot Reload (HMR)",
   },
   {
     id: "code_build",
-    title: "Code Build",
+    title: "Sequencer",
     soon: true,
     tooltip: "First Build",
   },
   {
     id: "build_from_cache",
-    title: "Build from Cache",
+    title: "Memory",
     soon: true,
     tooltip: "Second Build",
   },
