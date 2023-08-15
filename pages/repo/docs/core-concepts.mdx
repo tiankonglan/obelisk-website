@@ -14,19 +14,29 @@ Obelisk Engine is so good because it’s built on a reusable library for Sui Mov
 ![插图1](/images/docs/pack/core.png 'MD X 图片处理!')
 
 
-### High Level Abstraction
+### Entity Component System Protocol (EPS) Built with Move Language for Out-of-the-Box Use
 
-Obelisk Framework in Obelisk Engine assumes an important role of infrastructure abstraction, through the implementation of ECS-like architecture in Sui move, as well as with the user experience editor of the traditional engine architecture such as unreal, unity, cocos, etc. to make non-financial complex application scenarios of the birth rate greatly increased.
+- EPS is a protocol for an entity component system (ECS) built using the Move language. It allows developers to inherit the underlying code of EPS and engage in business development by importing dependencies into their project directory.
+- EPS is based on the concept of an entity component system and incorporates the principles of protocol-oriented programming. It focuses primarily on the functionality of objects and defines specifications for methods and properties of a particular type through protocols.
+- The goal of EPS is to achieve the features of protocol-oriented programming on top of the ECS inheritance.
 
-### Easy-to-Use High-Level Data Indexing and Access Client
+### Efficient Data Indexing and Transaction Processing
 
-With Obelisk Engine's Obelisk SDK, you can efficiently read and write Dapps based on Obelisk Framework on the user target platforms supported by the SDK. By default, the Obelisk Engine integrates the Obelisk SDK into the legacy technology scaffolding and engine, making it easy for creators to use.
+- Developing business applications using EPS can be more complex compared to using the standard framework and library of the Move ecosystem. EPS involves custom structures, and large-scale storage, and potentially requires atomic transaction merging and splitting operations.
+- The Obelisk SDK provides advanced abstractions that simplify EPS configuration, parsing, and encoding/decoding processes, enabling developers to efficiently access the business built through EPS.
+- For transaction processing, batch processing can execute multiple atomic transactions simultaneously. In scenarios like game development, where transaction processing demands are higher, some transaction types can be simulated off-chain, similar to the concept of sequencers. The Obelisk Engine will provide related services and transaction batch sponsorship in the future to lower the entry barrier.
 
-### Open Customized Plug-ins
+### Upgrades and Data Migration
 
+- Obelisk offers a standard specification for architectural upgrades and data migration rules for business contracts built using EPS.
+- It also provides a user-friendly front-end interface for smooth project migration.
 
-Through Obelisk Engine's Plugins section, creators can be based on the basis of the secondary modification of the use of Plugins provide a high intensity of customization and expansion of the function, such as the business has a very high processing requirements for hot data, you can develop a cache cache plugin on the basis of the chain attached to the framework
+### Custom Plugin Integration (ZK, AI, VRF, Oracle)
 
-### Highly available additional services technology stack
+- The engine allows for the integration of third-party on-chain or off-chain code contributions as plugins.
+- These plugins can be utilized to integrate different technologies and data to meet the needs of the entire blockchain application.
 
-Obelisk Engine will gradually open up some of the efficiency to reduce costs of the technology stack services, if the business user level scale of communication, transaction processing, state synchronization and other high requirements can be achieved through the shared/non-shared sequencer.
+### Cross-Platform API and SDK Integration
+
+- The engine supports the integration of EPS-based business code with other user-targeted platforms.
+- Considering the diverse terminal platforms used by target users, the engine supports third-party contributions from the open-source community, providing interaction code for different programming languages (JavaScript/TypeScript/Go/Rust/C#/C++/Dart) and various game engines/frameworks (Unity/Unreal/Cocos/Godot). This enables developers to code and interact in various environments.
