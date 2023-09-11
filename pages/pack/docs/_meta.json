@@ -4,10 +4,12 @@
   "why-move": "Why Move?",
   "core-concepts": "Core Concepts",
   "features": "Features",
+  "ts-sdk": "SDK",
+  "tutorials": "Tutorials",
+  "video": "Video",
   "benchmarks": "Benchmarks",
   "migrating-from-others": "Migrating from Others",
   "roadmap": "Roadmap",
   "contribute": "Contribute"
-
 }
 
