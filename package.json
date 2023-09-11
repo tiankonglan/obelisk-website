@@ -13,7 +13,7 @@
     "lint:prettier": "prettier -c . --cache --ignore-path=../.prettierignore"
   },
   "author": "Jared Palmer",
-  "license": "MPL-2.0",
+  "license": "BSL-2.0",
   "dependencies": {
     "@headlessui/react": "^1.7.3",
     "@heroicons/react": "1.0.6",

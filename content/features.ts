@@ -3,8 +3,8 @@ import EcosystemIconDark from "../public/images/docs/shared/feature-icons/ecosys
 import EcosystemIconLight from "../public/images/docs/shared/feature-icons/ecosystem-light.svg";
 import LightningIconDark from "../public/images/docs/shared/feature-icons/lightning-dark.svg";
 import LightningIconLight from "../public/images/docs/shared/feature-icons/lightning-light.svg";
-import BarsIconDark from "../public/images/docs/shared/feature-icons/bars-dark.svg";
-import BarsIconLight from "../public/images/docs/shared/feature-icons/bars-light.svg";
+import BarsIconDark from "../public/images/docs/shared/feature-icons/Move-Logo.svg";
+import BarsIconLight from "../public/images/docs/shared/feature-icons/Move-Logo.svg";
 import MultiEnvTargetsIconDark from "../public/images/docs/shared/feature-icons/multi-env-targets-dark.svg";
 import MultiEnvTargetsIconLight from "../public/images/docs/shared/feature-icons/multi-env-targets-light.svg";
 import NextJSIconDark from "../public/images/docs/shared/feature-icons/nextjs-dark.svg";
