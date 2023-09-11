@@ -13,7 +13,7 @@ It comes with
 1. `compgen <configPath>`: autogenerate Obelisk components based on the store components config file
 2. `publish`: Deploy your own world project on the specified sui network.
 3. `localnode`: start a local Sui node for development
-4. `faucet`: an interface to the Lattice Devnet/Localnet faucet. It makes it easy to fund addresses on the testnet/localnet
+4. `faucet`: an interface to the Devnet/Localnet faucet. It makes it easy to fund addresses on the Devnet/localnet
 
 ## Installation
 
@@ -78,6 +78,6 @@ obelisk faucet --network <network:devnet/localnet>
 obelisk faucet --network <network:devnet/localnet> --recipient <address>
 ```
 
-The default faucet service automatically gives test tokens to accounts in `dotenv`.
+The default faucet service automatically gives test tokens to accounts in [`dotenv`](https://www.npmjs.com/package/dotenv).
 
 To fund an address on the devnet/localnet, run `obelisk faucet --recipient <address>`

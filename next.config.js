@@ -139,7 +139,7 @@ const nextConfig = withNextra({
       {
         source: "/discord{/}?",
         permanent: true,
-        destination: "https://discord.gg/sSzyjxvbf5",
+        destination: "https://discord.gg/zbPrQTy7Rf",
       },
       {
         source: "/docs/changelog",
