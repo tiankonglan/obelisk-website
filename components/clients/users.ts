@@ -566,12 +566,6 @@ export const users: Array<TurboUser> = [
     pinned: true,
   },
   {
-    caption: "ROOCH",
-    image: "/images/logos/rooch.svg",
-    infoLink: "https://rooch.network/",
-    pinned: true,
-  },
-  {
     caption: "APT",
     image: "/images/logos/aptos-apt-logo.svg",
     infoLink: "https://aptosfoundation.org/",
@@ -579,6 +573,12 @@ export const users: Array<TurboUser> = [
     style: {
       width: 150,
     },
+  },
+  {
+    caption: "ROOCH",
+    image: "/images/logos/rooch.svg",
+    infoLink: "https://rooch.network/",
+    pinned: true,
   },
 
 
