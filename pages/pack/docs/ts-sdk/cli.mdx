@@ -1,6 +1,83 @@
 ---
-title: TS-SDK?
+title: CLI - Obelisk
 description: Learn why we use SDK.
 ---
 
+## The Obelisk CLI
 
+The Obelisk CLI is used for building and developing a Obelisk project.
+
+It comes with
+
+
+1. `compgen <configPath>`: autogenerate Obelisk components based on the store components config file
+2. `publish`: Deploy your own world project on the specified sui network.
+3. `localnode`: start a local Sui node for development
+4. `faucet`: an interface to the Lattice Devnet/Localnet faucet. It makes it easy to fund addresses on the testnet/localnet
+
+## Installation
+
+We don’t recommend installing the CLI globally.
+
+Instead, you should add the CLI as a dev dependency to your project (done automatically if you start from a starter kit using `pnpm create obelisk-world`), and use it with `pnpm build` inside your project directory.
+
+## Using the CLI
+
+Some commands expect a Obelisk config in the same folder where the CLI is being executed. This includes `compgen` and `publish`.
+
+`faucet`, and `localnode` can be executed anywhere.
+
+## Commands
+
+### `compgen`
+
+Generates Store libraries from a `obelisk.config.ts` file. See the [Store Config and `compgen` documentation](store/config) in the Store section for more details.
+
+```bash
+# in a folder with a obelisk.config.ts
+obelisk compgen obelisk.config.ts
+```
+
+### `publish`
+
+Deploy a Obelisk contract project with the World framework.
+
+This tool will use the `obelisk.config.ts` to detect all systems, components, singletonComponents, and projectName in the World and will deploy them to the chain specified.
+
+When using the deployer, you must set the private key of the deployer using the `PRIVATE_KEY` environment variable. You can make this easier by using [`dotenv`](https://www.npmjs.com/package/dotenv) before running `obelisk publish` in your deployment script.
+
+To set up the target network for deploying the contract (mainnet/testnet/devnet/localnet), before deploying the contract, please make sure that you have some tokens in your account, which will be used for some fees when deploying the contract. (If you choose devnet/localnet, you can get some test tokens via `obelisk faucet`), if you need to deploy the contract on localnet, please make sure you have started localnode.
+
+```bash
+# to deploy locally
+obelisk publish --network localnet --configPath obelisk.config.ts
+# to deploy to the lattice devnet
+obelisk publish --network devnet --configPath obelisk.config.ts
+# to deploy to the lattice testnet
+obelisk publish --network testnet --configPath obelisk.config.ts
+# to deploy to optimism mainnet
+obelisk publish --network mainnet --configPath obelisk.config.ts
+```
+
+### `localnode`
+
+Runs Anvil with a block time of 1s, and no base fee (to make it possible for unfunded account to send transactions).
+
+This command also wipes the Anvil cache. Anvil cache blow-up problems won’t happen to you anymore 🙂
+
+```bash
+obelisk localnode
+```
+
+### `faucet`
+
+Connects to a Obelisk faucet service to fund an address.
+
+```bash
+obelisk faucet --network <network:devnet/localnet>
+obelisk faucet --network <network:devnet/localnet> --recipient <address>
+```
+
+The default faucet service automatically gives test tokens to accounts in `dotenv`.
+
+To fund an address on the devnet/localnet, run `obelisk faucet --recipient <address>`
