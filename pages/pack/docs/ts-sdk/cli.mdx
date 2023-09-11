@@ -61,9 +61,9 @@ obelisk publish --network mainnet --configPath obelisk.config.ts
 
 ### `localnode`
 
-Runs Anvil with a block time of 1s, and no base fee (to make it possible for unfunded account to send transactions).
+The localnode uses the official `sui-test-validator` binary provided by sui to start the localnode.
 
-This command also wipes the Anvil cache. Anvil cache blow-up problems won’t happen to you anymore 🙂
+The local rpc is `http://127.0.0.1:9000`
 
 ```bash
 obelisk localnode
