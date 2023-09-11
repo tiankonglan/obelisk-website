@@ -51,7 +51,7 @@ export function PackLetter() {
           <div className="w-24 h-24 min-w-[96px] min-h-[96px] rounded-full border dark:border-white/10 border-black/10 flex items-center justify-center ">
             <Image
               alt="Image of Tobias Koopers"
-              src="/images/people/yaoshui.jpeg"
+              src="/images/people/henry.jpg"
               width={64}
               height={64}
               className="rounded-full"
@@ -75,8 +75,8 @@ export function PackLetter() {
               className="hidden -mb-3 -ml-3 dark:block"
             />
             <div className="flex gap-2 flex-wrap text-sm leading-none text-[#888888] max-w-[156px] md:max-w-xl lg:max-w-xl">
-              <p className="font-bold">Yao Shui Ge</p>
-              <p>Creator of Obelisk</p>
+              <p className="font-bold">Henry</p>
+              <p>Leader of Obelisk Engine</p>
             </div>
           </div>
         </FadeIn>

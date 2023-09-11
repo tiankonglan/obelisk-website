@@ -5,7 +5,7 @@ import { Footer } from "./components/Footer";
 import Navigation from "./components/Navigation";
 import HeaderLogo from "./components/HeaderLogo";
 import ExtraContent from "./components/ExtraContent";
-import { Discord, Github } from "./components/Social";
+import {Discord, Github, Telegram, X} from "./components/Social";
 
 const SITE_ROOT = "https://turbo.build";
 
@@ -155,6 +155,8 @@ const config: DocsThemeConfig = {
       <>
         <Github />
         <Discord />
+        <X />
+        <Telegram/>
       </>
     ),
   },

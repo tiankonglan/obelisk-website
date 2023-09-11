@@ -59,7 +59,7 @@ export function RepoLetter() {
           <div className="w-24 h-24 min-w-[96px] min-h-[96px] rounded-full border dark:border-white/10 border-black/10 flex items-center justify-center ">
             <Image
               alt="User"
-              src="/images/people/giao.png"
+              src="/images/people/henry.jpg"
               width={64}
               height={64}
               className="rounded-full "
@@ -81,8 +81,8 @@ export function RepoLetter() {
               className="hidden -mt-2 dark:block"
             />
             <div className="flex gap-2 flex-wrap text-sm leading-none text-[#888888] max-w-[156px] md:max-w-xl lg:max-w-xl">
-              <p className="font-bold">Giao ge</p>
-              <p>Co-Founder of Obelisk Labs</p>
+              <p className="font-bold">Henry</p>
+              <p>Founder of Obelisk Labs</p>
             </div>
           </div>
         </FadeIn>

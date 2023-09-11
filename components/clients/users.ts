@@ -564,9 +564,7 @@ export const users: Array<TurboUser> = [
     image: "/images/logos/sui.svg",
     infoLink: "https://sui.io/",
     pinned: true,
-
   },
-
   {
     caption: "APT",
     image: "/images/logos/aptos-apt-logo.svg",
@@ -575,6 +573,12 @@ export const users: Array<TurboUser> = [
     style: {
       width: 150,
     },
+  },
+  {
+    caption: "ROOCH",
+    image: "/images/logos/rooch.svg",
+    infoLink: "https://rooch.network/",
+    pinned: true,
   },
 
 
