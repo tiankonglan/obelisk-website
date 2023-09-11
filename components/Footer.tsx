@@ -53,6 +53,14 @@ const navigation = {
       name: "Discord",
       href: "https://discord.com/invite/ceETxS2eTa",
     },
+    {
+      name: "Twitter",
+      href: "https://twitter.com/0xObeliskLabs",
+    },
+    {
+      name: "Telegram",
+      href: "https://t.me/+0_98p03Fbv1hNzY1",
+    },
   ],
   company: (site: TurboSite) => [
     // { name: "Vercel", href: "https://vercel.com" },
