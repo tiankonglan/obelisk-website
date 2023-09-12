@@ -2,14 +2,16 @@
   "index": "Introduction",
   "quick-start": "Quick start",
   "why-move": "Why Move?",
-  "core-concepts": "Core Concepts",
+  "feature": "Feature",
   "components": "Components",
   "features": "Features",
   "ts-sdk": "SDK",
   "tutorials": "Tutorials",
+
   "video": "Video",
   "benchmarks": "Benchmarks",
   "migrating-from-others": "Migrating from Others",
+  "obelisk-bridge": "Obelisk Bridge",
   "roadmap": "Roadmap",
   "contribute": "Contribute"
 }
