@@ -1,9 +1,76 @@
 ---
-title: Reading and writing to Store
-description: Reading and writing to Store
+title: Reading and writing to Components
+description: Reading and writing to Components
 ---
-
 
 ## Reading and writing to Components
 
-coming soon
+### Access to Components via code-generated libraries
+
+>Accessing Components via the libraries generated with the `compgen` tool is the recommended way to use Components.
+
+The `compgen` tool of the Obelisk CLI can create libraries for each component that wraps the low-level API of Components and types the results.
+
+This section assumes the existence of “MyTable” as described with the configuration below.
+
+```tsx
+// definition of MyComponent
+components: {
+    my_component: {
+        name: "string",
+        age: "u8",
+        sex: "bool"
+    }
+}
+```
+
+**Adding a record**
+
+```rust
+// Adding a field
+// args: world, key, name, age, sex
+my_component::add(&mut world, keccak256("key"), "name", 10, false);
+```
+
+**Updating a record**
+
+```rust
+// Updating a record
+my_component::update(&mut world, keccak256("key"), "name", 11, false);
+```
+
+**Updating a field**
+
+```rust
+// Updating name
+my_component::update_name(&mut world, keccak256("key"), "name");
+// Updating age
+my_component::update_age(&mut world, keccak256("key"), 11);
+// Updating sex
+my_component::update_sex(&mut world, keccak256("key"), false);
+```
+
+**Retrieving a record**
+
+```rust
+// Retrieving a record
+my_component::get(&world, keccak256("key"));
+```
+
+**Retrieving a field**
+
+```rust
+// Retrieve name
+my_component::get_name(&world, keccak256("key"));
+// Retrieve age
+my_component::get_age(&world, keccak256("key"));
+// Retrieve sex
+my_component::get_sex(&world, keccak256("key")); 
+```
+
+**Deleting a record**
+
+```rust
+// Deleting a record
+my_component::remove(&mut world, keccak256("key"));
+```
