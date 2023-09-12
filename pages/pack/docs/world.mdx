@@ -6,7 +6,6 @@ World is the Kernel of Obelisk. It is a specific pattern for writing on-chain ap
 2. **Systems**: stateless logic contracts that read and write to Components tables.
 3. **Permissionless creation of componets and systems** from _anyone_ on-chain.
 4. **Access-control for componets and systems** based on packages.
-5. **Modules**: on-chain scripts installing tables, systems, and hooks on the World.
 
 When using the World kernel, all the state and logic of the application is centralized in a single contract — the World contract. The World takes care of mediating writes to the Components depending on who requests them, and routes function-calls to their respective systems which then read and write to the Components on the World.
 
