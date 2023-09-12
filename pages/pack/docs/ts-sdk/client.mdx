@@ -18,7 +18,6 @@ When the world contract is deployed successfully, it will return a PackageId (th
 ### Data preparation
 
 We create a Project called Counter and declare sigletonComponents called counter, which is of type `u64` and has an initial value of `0`.
-For more information on Store Config, [see this article]().
 
 
 ```typescript
@@ -75,19 +74,19 @@ We'll get the `packageId` and `worldId` on the command line.
 ### Init Obelisk Client
 
 ```typescript
-    import { getMetadata, Obelisk, NetworkType } from "@0xobelisk/client";
+import { getMetadata, Obelisk, NetworkType } from "@0xobelisk/client";
 
-    const network = "devnet" as NetworkType
-    const packageId = "0x804578b9eed47d461bba52c393cf148302819e2ba0a0f558356cc419b3e941ed"
-    
-    const metadata = await getMetadata(network, packageId);
+const network = "devnet" as NetworkType
+const packageId = "0x804578b9eed47d461bba52c393cf148302819e2ba0a0f558356cc419b3e941ed"
 
-    const obelisk = new Obelisk({
-        networkType: network,
-        packageId: packageId,
-        metadata: metadata,
-        secretKey: privkey
-    });
+const metadata = await getMetadata(network, packageId);
+
+const obelisk = new Obelisk({
+    networkType: network,
+    packageId: packageId,
+    metadata: metadata,
+    secretKey: privkey
+});
 ```
 
 ### World Tx
@@ -95,69 +94,66 @@ We'll get the `packageId` and `worldId` on the command line.
 If you need to call a method in the system, you can do so using the `obelisk.tx.moudleName.funcName()` form.
 
 ```typescript
-    import { getMetadata, Obelisk, TransactionBlock } from "@0xobelisk/client";
+import { getMetadata, Obelisk, TransactionBlock } from "@0xobelisk/client";
 
-    const metadata = await getMetadata(network, packageId);
+const metadata = await getMetadata(network, packageId);
 
-    const obelisk = new Obelisk({
-        networkType: network,
-        packageId: packageId,
-        metadata: metadata,
-        secretKey: privkey
-    });
+const obelisk = new Obelisk({
+    networkType: network,
+    packageId: packageId,
+    metadata: metadata,
+    secretKey: privkey
+});
 
-    // Initiate transactions through the account set up by obelisk
-    const tx = new TransactionBlock()
+// Initiate transactions through the account set up by obelisk
+const tx = new TransactionBlock()
 
-    const world = tx.pure(WORLD_ID)
-    const params = [
-        world,
-    ]
+const world = tx.pure(WORLD_ID)
+const params = [
+    world,
+]
 
-    const res_tx = await obelisk.tx.counter_system.inc(tx, params)
+const res_tx = await obelisk.tx.counter_system.inc(tx, params)
 
-    // If you want to encapsulate the TransactionBlock
-    const tx = new TransactionBlock()
-    const world = tx.pure(WORLD_ID)
-    const params = [
-        world,
-    ]
-    // By isolating the signature from the transactionBlock construction in this way, 
-    // the front-end wallet plugin can signAndSend() directly to the transactionBlock, 
-    // facilitating front-end interaction.
-    const new_tx = await obelisk.tx.counter_system.inc(tx, params, true) as TransactionBlock;
+// If you want to encapsulate the TransactionBlock
+const tx = new TransactionBlock()
+const world = tx.pure(WORLD_ID)
+const params = [
+    world,
+]
+// By isolating the signature from the transactionBlock construction in this way, 
+// the front-end wallet plugin can signAndSend() directly to the transactionBlock, 
+// facilitating front-end interaction.
+const new_tx = await obelisk.tx.counter_system.inc(tx, params, true) as TransactionBlock;
 
-    const response = await obelisk.signAndSendTxn(
-        new_tx
-    )
+const response = await obelisk.signAndSendTxn(
+    new_tx
+)
 ```
 
 ### World Query
 
-**Query public contract view func**
+#### Query public contract view func
 
 If your system method provides a method with no modification status and a return, then you can query it via `obelisk.query.moudleName.funcName()`.
 
 ```typescript
-    const metadata = await getMetadata(NETWORK, PACKAGE_ID);
-    const obelisk = new Obelisk({
-        networkType: NETWORK,
-        packageId: PACKAGE_ID,
-        metadata: metadata,
-    });
-    
-    const tx = new TransactionBlock()
-    const world = tx.pure(WORLD_ID)
-    const params = [
-        world,
-    ]
-    const query_value = await obelisk.query.counter_system.get(tx, params);
+const metadata = await getMetadata(NETWORK, PACKAGE_ID);
+const obelisk = new Obelisk({
+    networkType: NETWORK,
+    packageId: PACKAGE_ID,
+    metadata: metadata,
+});
+
+const tx = new TransactionBlock()
+const world = tx.pure(WORLD_ID)
+const params = [
+    world,
+]
+const query_value = await obelisk.query.counter_system.get(tx, params);
 ```
 
-
-
-
-**get world**
+#### Get world
 
 Queries the Object information of worldId.
 
@@ -172,48 +168,48 @@ Queries the Object information of worldId.
 ```
 
 
-**Get components**
+#### Get components
 
 Get all the component stores in the world store.
 
 ```typescript
-    const metadata = await getMetadata(NETWORK, PACKAGE_ID);
-    const obelisk = new Obelisk({
-        networkType: NETWORK,
-        packageId: PACKAGE_ID,
-        metadata: metadata,
-    });
-    const components_value = await obelisk.getComponents(WORLD_ID)
+const metadata = await getMetadata(NETWORK, PACKAGE_ID);
+const obelisk = new Obelisk({
+    networkType: NETWORK,
+    packageId: PACKAGE_ID,
+    metadata: metadata,
+});
+const components_value = await obelisk.getComponents(WORLD_ID)
 ```
 
 
-**Get component**
+#### Get component
 
 Queries the world store for the specified component.
 
 ```typescript
-    const metadata = await getMetadata(NETWORK, PACKAGE_ID);
-    const obelisk = new Obelisk({
-        networkType: NETWORK,
-        packageId: PACKAGE_ID,
-        metadata: metadata,
-    });
-    const component_name = Object.keys(obeliskConfig.singletonComponents)[0]
-    const component_value = await obelisk.getComponentByName(WORLD_ID, component_name)
+const metadata = await getMetadata(NETWORK, PACKAGE_ID);
+const obelisk = new Obelisk({
+    networkType: NETWORK,
+    packageId: PACKAGE_ID,
+    metadata: metadata,
+});
+const component_name = Object.keys(obeliskConfig.singletonComponents)[0]
+const component_value = await obelisk.getComponentByName(WORLD_ID, component_name)
 ```
 
-**Get owned entities**
+#### Get owned entities
 
 Query all the entities under the current worldId that are owned by a certain address.
 
 ```typescript
-    const metadata = await getMetadata(NETWORK, PACKAGE_ID);
-    const obelisk = new Obelisk({
-        networkType: NETWORK,
-        packageId: PACKAGE_ID,
-        metadata: metadata,
-    });
+const metadata = await getMetadata(NETWORK, PACKAGE_ID);
+const obelisk = new Obelisk({
+    networkType: NETWORK,
+    packageId: PACKAGE_ID,
+    metadata: metadata,
+});
 
-    const owner = "0xfa99b5b0463fcfb7d0203c701a76da5eda21a96190eb1368ab36a437cc89195e";
-    const owned_entities_value = await obelisk.getOwnedEntities(owner);
+const owner = "0xfa99b5b0463fcfb7d0203c701a76da5eda21a96190eb1368ab36a437cc89195e";
+const owned_entities_value = await obelisk.getOwnedEntities(owner);
 ```
