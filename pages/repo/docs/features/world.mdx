@@ -2,7 +2,7 @@
 
 The world is the more central part of the framework, controlling the origin of the world and the associated query and add methods. For example, through the get method can get variable entity reference for entity modification operations. Add or uninstall components and remove entities through the add and remove methods.
 
-```move
+```rust
 module eps::world {
     use sui::object::UID;
     use sui::object;
@@ -56,7 +56,7 @@ module eps::world {
 ```
 Finally, through the contract initialization function, the create_world method is called to initialize a world to generate
 
-```move
+```rust
 module counter::main {
 
      #[allow(unused_function)]
