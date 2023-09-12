@@ -30,7 +30,7 @@ function FooterHeader({ children }: { children: ReactNode }) {
 const navigation = {
   general: [
     // { name: "Blog", href: "/blog" },
-    // { name: "Releases", href: "https://github.com/vercel/turbo/releases" },
+    // { name: "Releases", href: "https://github.com/0xobelisk/obelisk-website/releases" },
   ],
   repo: [
     // { name: "Documentation", href: "/repo/docs" },

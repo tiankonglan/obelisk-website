@@ -144,7 +144,7 @@ const nextConfig = withNextra({
       {
         source: "/docs/changelog",
         permanent: true,
-        destination: "https://github.com/vercel/turbo/releases",
+        destination: "https://github.com/0xobelisk/obelisk-website/releases",
       },
       {
         source: "/docs/guides/complimentary-tools",

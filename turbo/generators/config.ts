@@ -127,7 +127,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         path: "pages/blog/{{ post }}",
         pattern: /^-\s\[.*?\sGitHub\sStars\].*$/gm,
         template:
-          "- [{{ turboStars }}+ GitHub Stars](https://github.com/vercel/turbo)",
+          "- [{{ turboStars }}+ GitHub Stars](https://github.com/0xobelisk/obelisk-website)",
       },
       // update weekly npm downloads
       {

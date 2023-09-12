@@ -13,7 +13,7 @@ const config: DocsThemeConfig = {
   sidebar: {
     defaultMenuCollapseLevel: 10000,
   },
-  docsRepositoryBase: "https://github.com/vercel/turbo/blob/main/docs",
+  docsRepositoryBase: "https://github.com/0xobelisk/obelisk-website/blob/main",
   useNextSeoProps: function SEO() {
     const router = useRouter();
     const { frontMatter } = useConfig();
